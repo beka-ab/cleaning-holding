@@ -1,0 +1,222 @@
+export default {
+  nav: {
+    home: "Home",
+    services: "Services",
+    about: "About",
+    contact: "Contact",
+    book: "Book Now",
+  },
+  hero: {
+    badge: "Est. 2012 — Trusted by 3,800+ Clients",
+    line1: "A Cleaner Space,",
+    line2: "A Clearer Mind.",
+    sub: "Professional cleaning services for homes and businesses — delivered with precision, care, and an unwavering eye for detail.",
+    btn1: "Book a Clean",
+    btn2: "Our Services",
+    scroll: "Scroll",
+  },
+  partners: "Our Partners",
+  stats: {
+    exp: "Years of Experience",
+    clients: "Clients Served",
+    satisfaction: "Satisfaction Rate",
+    support: "Available Support",
+  },
+  services: {
+    pageTitle: "Our Services — Cleaning Holding",
+    pageMeta:
+      "Explore Cleaning Holding's full range of luxury cleaning services.",
+    pageSubtitle:
+      "Every service is delivered with the same commitment to excellence — precise, thorough, and tailored to you.",
+    label: "What We Offer",
+    title: "Our Services",
+    ctaTitle: "Ready to Get Started?",
+    ctaSub: "Contact us today for a free, no-obligation quote.",
+    ctaBtn: "Request a Quote",
+    learnMore: "Learn More",
+    viewAll: "View All Services",
+    residential: {
+      title: "Residential Cleaning",
+      subtitle: "Your Home, Perfected",
+      desc: "White-glove home cleaning tailored to your lifestyle and schedule.",
+      fullDesc:
+        "We treat every home as if it were our own. Our trained professionals use premium eco-friendly products to deliver a deep, thorough clean that leaves your space feeling renewed and refreshed.",
+      f1: "Regular Maintenance Cleaning",
+      f2: "Deep Room-by-Room Cleaning",
+      f3: "Kitchen & Bathroom Sanitization",
+      f4: "Window & Surface Polishing",
+    },
+    commercial: {
+      title: "Commercial Cleaning",
+      subtitle: "Spaces That Inspire",
+      desc: "Premium office and facility cleaning that reflects your brand.",
+      fullDesc:
+        "First impressions matter. We keep your office, retail space, or facility immaculate — creating an environment where your team thrives and clients feel confident.",
+      f1: "Office & Workspace Cleaning",
+      f2: "Retail & Showroom Cleaning",
+      f3: "Post-Event Cleanup",
+      f4: "Regular Facility Maintenance",
+    },
+    deep: {
+      title: "Deep Cleaning",
+      subtitle: "From Top to Bottom",
+      desc: "Thorough top-to-bottom cleaning for a truly spotless environment.",
+      fullDesc:
+        "When standard cleaning isn't enough. Our deep clean service reaches every corner, crevice, and surface — eliminating buildup, allergens, and bacteria for a truly pristine result.",
+      f1: "Full Property Deep Clean",
+      f2: "Appliance Interior Cleaning",
+      f3: "Grout & Tile Restoration",
+      f4: "Air Vent & Fixture Cleaning",
+    },
+    move: {
+      title: "Move In / Move Out",
+      subtitle: "Fresh Starts & Clean Endings",
+      desc: "Leave no trace behind — or start fresh in a pristine space.",
+      fullDesc:
+        "Moving is stressful enough. Let us handle the cleaning so you can focus on what matters. We ensure every property is spotless — whether you're arriving or departing.",
+      f1: "Full Property Sanitization",
+      f2: "Cabinet & Drawer Cleaning",
+      f3: "Wall Scuff & Mark Removal",
+      f4: "Landlord-Ready Inspection Clean",
+    },
+    construction: {
+      title: "Post-Construction",
+      subtitle: "Reveal the Beauty Beneath",
+      desc: "Specialized post-construction cleaning for move-in ready results.",
+      fullDesc:
+        "Construction leaves behind dust, debris, and residue. Our specialized post-construction cleaning transforms a work site into a move-in ready masterpiece.",
+      f1: "Dust & Debris Removal",
+      f2: "Surface & Floor Polishing",
+      f3: "Window & Glass Cleaning",
+      f4: "Final Inspection Detailing",
+    },
+    recurring: {
+      title: "Recurring Packages",
+      subtitle: "Consistent Excellence",
+      desc: "Weekly, bi-weekly, and monthly packages for consistent cleanliness.",
+      fullDesc:
+        "Maintain the standard. Our weekly, bi-weekly, and monthly packages ensure your space is always guest-ready, with dedicated cleaners who know your preferences.",
+      f1: "Weekly / Bi-Weekly / Monthly",
+      f2: "Dedicated Cleaning Team",
+      f3: "Customized Checklist",
+      f4: "Priority Scheduling",
+    },
+  },
+  process: {
+    label: "How It Works",
+    title: "Our Process",
+    step1: {
+      title: "Book Online",
+      desc: "Choose your service and preferred date in minutes.",
+    },
+    step2: {
+      title: "We Confirm",
+      desc: "Our team reviews and confirms your booking within 2 hours.",
+    },
+    step3: {
+      title: "We Clean",
+      desc: "Trained professionals arrive on time with all equipment.",
+    },
+    step4: {
+      title: "You Enjoy",
+      desc: "Inspect the results and enjoy your spotless space.",
+    },
+  },
+  cta: {
+    title: "Ready for a Spotless Space?",
+    sub: "Get your free quote today — no obligations.",
+    btn: "Get Free Quote",
+  },
+  about: {
+    pageTitle: "About Us — Cleaning Holding",
+    pageMeta:
+      "Learn about Cleaning Holding — 12 years of premium cleaning excellence.",
+    label: "Our Story",
+    title: "About Us",
+    subtitle:
+      "A decade of dedication, thousands of satisfied clients, and one unwavering standard — excellence.",
+    since: "Since 2012",
+    storyTitle: "Built on a Foundation of Trust",
+    story1:
+      "Cleaning Holding was founded in 2012 with a simple but powerful belief: every space deserves to be treated with care and precision. What started as a small residential cleaning operation has grown into a full-service cleaning company trusted by thousands of homes and businesses.",
+    story2:
+      "Over the past 12 years, we've built a reputation for reliability, discretion, and an uncompromising commitment to quality. Our clients don't just hire us — they trust us. And that trust is something we earn, protect, and never take for granted.",
+    quote:
+      "We don't just clean spaces — we restore a sense of calm, order, and pride to every environment we touch.",
+    valuesLabel: "What Drives Us",
+    valuesTitle: "Our Core Values",
+    teamLabel: "The People Behind the Excellence",
+    teamTitle: "Meet Our Team",
+    ctaTitle: "Let's Work Together",
+    ctaSub: "Experience the Cleaning Holding difference firsthand.",
+    ctaBtn: "Get in Touch",
+    values: {
+      v1: {
+        title: "Premium Quality",
+        desc: "We use only the finest eco-certified products and employ rigorous quality checks on every job.",
+      },
+      v2: {
+        title: "Trust & Integrity",
+        desc: "Fully vetted, insured, and background-checked professionals you can trust in your space.",
+      },
+      v3: {
+        title: "Reliability",
+        desc: "On time, every time. We respect your schedule and deliver consistent results.",
+      },
+      v4: {
+        title: "Eco-Conscious",
+        desc: "Sustainable cleaning solutions that protect your family, pets, and the environment.",
+      },
+    },
+    team: {
+      exp: "experience",
+    },
+  },
+  contact: {
+    address: "Address",
+    phoneLabel: "Phone",
+    emailLabel: "Email",
+    hoursLabel: "Working Hours",
+    services: {
+      residential: "Residential Cleaning",
+      commercial: "Commercial Cleaning",
+      deep: "Deep Cleaning",
+      moveinout: "Move In / Move Out",
+      postconstruction: "Post-Construction",
+      recurring: "Recurring Package",
+    },
+    pageTitle: "Contact Us — Cleaning Holding",
+    pageMeta: "Get in touch with Cleaning Holding for a free quote.",
+    label: "Get In Touch",
+    title: "Contact Us",
+    subtitle:
+      "Ready for a spotless space? Reach out and we'll get back to you within 2 hours with a free quote.",
+    formTitle: "Send a Message",
+    formSub: "We'll respond within 2 business hours.",
+    name: "Full Name",
+    email: "Email",
+    phone: "Phone Number",
+    service: "Service Needed",
+    message: "Message",
+    selectService: "Select a service...",
+    send: "Send Message",
+    successTitle: "Thank You!",
+    successMsg:
+      "Your message has been received. A member of our team will be in touch with you shortly.",
+    infoTitle: "Contact Information",
+    infoSub: "We're always happy to hear from you.",
+    whyTitle: "Why Choose Us",
+    why1: "Free consultation & quote",
+    why2: "Response within 2 hours",
+    why3: "Fully insured & vetted team",
+    why4: "Flexible scheduling",
+    services: {
+      residential: "Residential Cleaning",
+      commercial: "Commercial Cleaning",
+      deep: "Deep Cleaning",
+      moveinout: "Move In / Move Out",
+      postconstruction: "Post-Construction",
+      recurring: "Recurring Package",
+    },
+  },
+};
