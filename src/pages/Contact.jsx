@@ -71,7 +71,7 @@ export default function Contact() {
 
   const contactInfo = [
     { icon: "📍", label: t("contact.address"), value: "Batumi, Georgia" },
-    { icon: "📞", label: t("contact.phoneLabel"), value: "+995 555 123 456" },
+    { icon: "📞", label: t("contact.phoneLabel"), value: "+995 599 90 46 11" },
     {
       icon: "✉️",
       label: t("contact.emailLabel"),

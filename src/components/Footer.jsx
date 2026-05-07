@@ -212,9 +212,9 @@ export default function Footer() {
             </div>
             {[
               { icon: "📍", text: "Batumi, Georgia" },
-              { icon: "📞", text: "+995 555 123 456" },
+              { icon: "📞", text: "+995 599 90 46 11" },
               { icon: "✉️", text: "info@cleaningholding.ge" },
-              { icon: "🕐", text: "Mon–Sat: 8:00 – 20:00" },
+              { icon: "🕐", text: "Mon–Sun: 8:00 – 20:00" },
             ].map((item, i) => (
               <div
                 key={i}

@@ -6,11 +6,11 @@ export default function CallButton() {
   const { i18n } = useTranslation();
 
   const phoneNumbers = {
-    ka: { number: "+995555123456", display: "+995 555 123 456" },
-    en: { number: "+995 588 888 888", display: "+995 588 888 888" },
-    ru: { number: "+995555123457", display: "+995 555 123 457" },
-    uk: { number: "+995555123458", display: "+995 555 123 458" },
-    tr: { number: "+995555123459", display: "+995 555 123 459" },
+    ka: { number: "+995599904611", display: "599 90 46 11" },
+    en: { number: "+995598077755", display: "598 07 77 55" },
+    ru: { number: "+995598077755", display: "598 07 77 55" },
+    uk: { number: "+995598077755", display: "598 07 77 55" },
+    tr: { number: "+995598077755", display: "598 07 77 55" },
   };
 
   const current = phoneNumbers[i18n.language] || phoneNumbers["ka"];
