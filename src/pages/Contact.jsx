@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 
 function useInView(threshold = 0.15) {
   const ref = useRef(null);
@@ -45,11 +46,31 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    emailjs
+      .send(
+        "service_h7h1uev",
+        "template_ucjm7kc",
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        },
+        "M_Ao_SwtymIwHpjFN",
+      )
+      .then(() => {
+        setSubmitted(true);
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        alert("Failed to send. Please try again.");
+      });
   };
 
   const contactInfo = [
-    { icon: "📍", label: t("contact.address"), value: "Tbilisi, Georgia" },
+    { icon: "📍", label: t("contact.address"), value: "Batumi, Georgia" },
     { icon: "📞", label: t("contact.phoneLabel"), value: "+995 555 123 456" },
     {
       icon: "✉️",
@@ -59,7 +80,7 @@ export default function Contact() {
     {
       icon: "🕐",
       label: t("contact.hoursLabel"),
-      value: "Mon–Sat: 8:00 – 20:00",
+      value: "Mon–Sun: 8:00 – 20:00",
     },
   ];
 
