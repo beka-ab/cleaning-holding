@@ -7,7 +7,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
-  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -19,11 +18,14 @@ export default function Navbar() {
     setMenuOpen(false);
   }, [location]);
 
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language || "ka";
+
   const links = [
-    { to: "/", label: t("nav.home") },
-    { to: "/services", label: t("nav.services") },
-    { to: "/about", label: t("nav.about") },
-    { to: "/contact", label: t("nav.contact") },
+    { to: `/${lang}`, label: t("nav.home") },
+    { to: `/${lang}/services`, label: t("nav.services") },
+    { to: `/${lang}/about`, label: t("nav.about") },
+    { to: `/${lang}/contact`, label: t("nav.contact") },
   ];
 
   return (

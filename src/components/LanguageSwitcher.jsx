@@ -19,7 +19,19 @@ export default function LanguageSwitcher() {
   const handleSelect = (code) => {
     i18n.changeLanguage(code);
     setOpen(false);
+
+    // Update URL to new language
+    const currentPath = window.location.pathname;
+    const pathParts = currentPath.split("/");
+    if (supportedLangs.includes(pathParts[1])) {
+      pathParts[1] = code;
+    } else {
+      pathParts.splice(1, 0, code);
+    }
+    window.location.href = pathParts.join("/");
   };
+
+  const supportedLangs = ["ka", "en", "ru", "uk", "tr"];
 
   return (
     <div style={{ position: "relative", zIndex: 1001 }}>
