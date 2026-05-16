@@ -269,7 +269,8 @@ export default function Home() {
   const [statsRef, statsInView] = useInView();
   const [servicesRef, servicesInView] = useInView();
   const [ctaRef, ctaInView] = useInView();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language || "ka";
 
   useEffect(() => {
     const timer = setTimeout(() => setHeroVisible(true), 100);
@@ -304,6 +305,15 @@ export default function Home() {
       title: t("services.move.title"),
       desc: t("services.move.desc"),
     },
+  ];
+
+  const servicePills = [
+    { icon: "🏠", label: t("services.residential.title") },
+    { icon: "🏢", label: t("services.commercial.title") },
+    { icon: "✨", label: t("services.deep.title") },
+    { icon: "📦", label: t("services.move.title") },
+    { icon: "🔨", label: t("services.construction.title") },
+    { icon: "🔄", label: t("services.recurring.title") },
   ];
 
   return (
@@ -363,7 +373,7 @@ export default function Home() {
         />
         <WipeAnimation />
 
-        <div style={{ position: "relative", zIndex: 1, maxWidth: "860px" }}>
+        <div style={{ position: "relative", zIndex: 1, maxWidth: "900px" }}>
           <div
             style={{
               display: "inline-block",
@@ -398,6 +408,7 @@ export default function Home() {
           >
             {t("hero.line1")}
           </h1>
+
           <h1
             style={{
               fontFamily: "var(--font-display)",
@@ -422,7 +433,7 @@ export default function Home() {
               color: "var(--white)",
               opacity: heroVisible ? 0.6 : 0,
               maxWidth: "520px",
-              margin: "0 auto 56px",
+              margin: "0 auto 48px",
               lineHeight: 1.9,
               transform: heroVisible ? "translateY(0)" : "translateY(20px)",
               transition: "all 0.9s ease 0.55s",
@@ -431,6 +442,7 @@ export default function Home() {
             {t("hero.sub")}
           </p>
 
+          {/* BUTTONS */}
           <div
             style={{
               display: "flex",
@@ -443,7 +455,7 @@ export default function Home() {
             }}
           >
             <Link
-              to="/contact"
+              to={`/${lang}/contact`}
               style={{
                 textDecoration: "none",
                 fontFamily: "var(--font-body)",
@@ -464,16 +476,16 @@ export default function Home() {
               {t("hero.btn1")}
             </Link>
             <Link
-              to="/services"
+              to={`/${lang}/services`}
               style={{
                 textDecoration: "none",
                 fontFamily: "var(--font-body)",
                 fontSize: "0.72rem",
-                letterSpacing: "3px",
+                letterSpacing: "2px",
                 textTransform: "uppercase",
                 color: "var(--gold)",
                 border: "1px solid rgba(201,168,76,0.4)",
-                padding: "18px 48px",
+                padding: "12px 22px",
                 transition: "all 0.3s ease",
                 display: "inline-block",
               }}
@@ -489,12 +501,69 @@ export default function Home() {
               {t("hero.btn2")}
             </Link>
           </div>
+
+          {/* SERVICE PILLS */}
+          <div
+            style={{
+              display: "flex",
+              gap: "10px",
+              justifyContent: "center",
+              flexWrap: "wrap",
+              marginTop: "40px",
+              opacity: heroVisible ? 1 : 0,
+              transform: heroVisible ? "translateY(0)" : "translateY(20px)",
+              transition: "all 0.9s ease 0.85s",
+            }}
+          >
+            {servicePills.map((s, i) => (
+              <Link
+                key={i}
+                to={`/${lang}/services`}
+                style={{
+                  textDecoration: "none",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  padding: "8px 16px",
+                  border: "1px solid rgba(201,168,76,0.2)",
+                  background: "rgba(201,168,76,0.04)",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                  borderRadius: "2px",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = "var(--gold)";
+                  e.currentTarget.style.background = "rgba(201,168,76,0.1)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = "rgba(201,168,76,0.2)";
+                  e.currentTarget.style.background = "rgba(201,168,76,0.04)";
+                }}
+              >
+                <span style={{ fontSize: "0.9rem" }}>{s.icon}</span>
+                <span
+                  style={{
+                    fontFamily: "var(--font-body)",
+                    fontSize: "0.62rem",
+                    letterSpacing: "1.5px",
+                    textTransform: "uppercase",
+                    color: "var(--white)",
+                    opacity: 0.75,
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {s.label}
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
 
+        {/* Scroll indicator */}
         <div
           style={{
             position: "absolute",
-            bottom: "40px",
+            bottom: "24px",
             left: "50%",
             transform: "translateX(-50%)",
             display: "flex",
@@ -695,7 +764,7 @@ export default function Home() {
 
         <div style={{ textAlign: "center", marginTop: "60px" }}>
           <Link
-            to="/services"
+            to={`/${lang}/services`}
             style={{
               textDecoration: "none",
               fontFamily: "var(--font-body)",
@@ -751,7 +820,7 @@ export default function Home() {
           {t("cta.sub")}
         </p>
         <Link
-          to="/contact"
+          to={`/${lang}/contact`}
           style={{
             textDecoration: "none",
             fontFamily: "var(--font-body)",
