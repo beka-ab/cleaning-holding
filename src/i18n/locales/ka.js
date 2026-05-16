@@ -200,9 +200,9 @@ export default {
     emailLabel: "ელ-ფოსტა",
     hoursLabel: "სამუშაო საათები",
     services: {
-      residential: "საცხოვრებელი დასუფთავება",
-      commercial: "კომერციული დასუფთავება",
-      deep: "გენერალური დასუფთავება",
+      residential: "dalageba, საცხოვრებელი დასუფთავება",
+      commercial: "dalageba, კომერციული დასუფთავება",
+      deep: "dasuftaveba, გენერალური დასუფთავება",
       moveinout: "გადასვლის დასუფთავება",
       postconstruction: "სამშენებლო დასუფთავება",
       recurring: "რეგულარული პაკეტი",

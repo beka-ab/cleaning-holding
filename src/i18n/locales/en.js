@@ -211,8 +211,8 @@ export default {
     why3: "Fully insured & vetted team",
     why4: "Flexible scheduling",
     services: {
-      residential: "Residential Cleaning",
-      commercial: "Commercial Cleaning",
+      residential: "dalageba, esidential Cleaning",
+      commercial: "dasuftaveba Commercial Cleaning",
       deep: "Deep Cleaning",
       moveinout: "Move In / Move Out",
       postconstruction: "Post-Construction",

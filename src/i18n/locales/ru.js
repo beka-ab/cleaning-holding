@@ -199,8 +199,8 @@ export default {
     emailLabel: "Эл. почта",
     hoursLabel: "Рабочие часы",
     services: {
-      residential: "Уборка жилья",
-      commercial: "Коммерческая уборка",
+      residential: "dalageba, Уборка жилья",
+      commercial: "dasuptaveba, Коммерческая уборка",
       deep: "Генеральная уборка",
       moveinout: "Уборка при переезде",
       postconstruction: "Постстроительная уборка",

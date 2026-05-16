@@ -199,8 +199,8 @@ export default {
     emailLabel: "Ел. пошта",
     hoursLabel: "Робочі години",
     services: {
-      residential: "Прибирання житла",
-      commercial: "Комерційне прибирання",
+      residential: "dasuptaveba, Прибирання житла",
+      commercial: "dalageba, Комерційне прибирання",
       deep: "Генеральне прибирання",
       moveinout: "Прибирання при переїзді",
       postconstruction: "Постбудівельне прибирання",

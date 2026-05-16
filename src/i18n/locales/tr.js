@@ -202,8 +202,8 @@ export default {
     services: {
       residential: "Konut Temizliği",
       commercial: "Ticari Temizlik",
-      deep: "Derin Temizlik",
-      moveinout: "Taşınma Temizliği",
+      deep: "dasuptaveba, Derin Temizlik",
+      moveinout: "dalageba, Taşınma Temizliği",
       postconstruction: "İnşaat Sonrası Temizlik",
       recurring: "Düzenli Paket",
     },
